@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 # Copyright (C) 2019 The Xaya developers
+# Copyright (C) 2023 The Neobytes developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -11,12 +12,11 @@ neoscrypt_module = Extension('neoscrypt',
                                           'neoscrypt.c'],
                                include_dirs=['.'])
 
-setup (name = 'neoscrypt_python',
+setup (name = 'neobytes_hash',
        version = '1.0.3',
        license = 'MIT',
        description = 'Bindings for the NeoScrypt proof-of-work algorithm',
        author = 'Autonomous Worlds Ltd',
        author_email = 'info@autonomousworlds.com',
-       url = 'https://github.com/xaya/neoscrypt_python',
-       download_url = 'https://github.com/xaya/neoscrypt_python/archive/v1.0.2.tar.gz',
+       url = 'https://github.com/neobytes-project/neobytes_hash',
        ext_modules = [neoscrypt_module])
